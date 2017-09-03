@@ -15,7 +15,7 @@ services:
       - 9989:9989   # for external workers
 
   buildbot:
-    image: buildbot/buildbot-master:latest
+    image: buildbot/buildbot-master:master
     env_file: db.env
     environment:
         - BUILDBOT_CONFIG_DIR=config
