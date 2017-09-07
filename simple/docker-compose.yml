@@ -1,7 +1,7 @@
 version: '2'
 services:
   buildbot:
-    image: buildbot-newmaster:master
+    image: "buildbot-newmaster:master" 
     env_file:
         - db.env
     environment:
